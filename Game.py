@@ -48,7 +48,6 @@ Player = input("Enter any symbol (✊, ✋ , ✌ )")
 computer_input = random.choice(games_input)
 
 # Conditions with respect to player input 
-
 if Player == '✊':
     rock()
 elif Player == '✌':
