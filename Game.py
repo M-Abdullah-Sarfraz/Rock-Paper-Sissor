@@ -28,13 +28,14 @@ def rock():
 def scissor():
     global Player_Score, Computer_Score 
     if Player == '✌' and computer_input == '✊':
-        print(f"{name} : wins")
-        print(f"{name} choose  {Player}  and computer choose {computer_input}" )
-        Player_Score = Player_Score +1
-    elif Player == '✌' and computer_input == '✋':
-        print(f"{name} : loose")
+        print(f"{name} : Loose")
         print(f"{name} choose  {Player}  and computer choose {computer_input}" )
         Computer_Score = Computer_Score +1
+        
+    elif Player == '✌' and computer_input == '✋':
+        print(f"{name} : Wins")
+        print(f"{name} choose  {Player}  and computer choose {computer_input}" )
+        Player_Score = Player_Score +1
     else:
         print("GAME DRAW")
         print(f"{name} choose  {Player}  and computer choose {computer_input}" )
